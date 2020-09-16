@@ -1,4 +1,3 @@
-
 import './App.css';
 import React, { useState,useEffect,useRef } from 'react';
 export default function CharacterCard(props) {
@@ -19,7 +18,10 @@ export default function CharacterCard(props) {
     })
  const className = `card ${active ? 'activeCard': ''}`
  return (
- <div className={className} onClick={activate}>{props.value}</div>
+ <div className={className} onClick={activate}>{props.value}  
+  
+ </div>
+ 
  )
 
 }

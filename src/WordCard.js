@@ -1,3 +1,4 @@
+import './App.css';
 import React, { useEffect, useState } from 'react';
 import CharacterCard from './CharacterCard';
 import _ from 'lodash';
@@ -32,7 +33,7 @@ useEffect(()=> {
         word: data.word,
         chars: data.chars,
         attempt: data.attempt,
-        guess: data.attempt,
+        guess: data.guess,
         completed: data.completed
     })
 },[])
@@ -44,23 +45,27 @@ const activationHandler = (c) => {
     if(guess.length == state.word.length){
         if(guess == state.word){
         console.log('yeah!')
-        setState({...state, guess: '', completed: true})
+        
+        
+       // setState({...state, guess: '', completed: true})
     }
     else{
         console.log('reset')
-        setState({...state, guess: '', attempt: state.attempt + 1})
+        window.location.reload();
+        //setState({...state, guess: '', attempt: state.attempt + 1})
         }
     }
 }
 
    
-    
+//const className = `card` 
     return (
         <div>
         { 
             Array.from(state.chars).map((c, i) => <CharacterCard value={c} key={i} activationHandler={activationHandler}
             attempt={state.attempt}/>) 
         }
+        <div>Word = {state.guess}</div>
         </div>
     );
 }
