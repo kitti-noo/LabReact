@@ -45,12 +45,14 @@ const activationHandler = (c) => {
     if(guess.length == state.word.length){
         if(guess == state.word){
         console.log('yeah!')
+        alert('Congratulation You win !')
         
         
        // setState({...state, guess: '', completed: true})
     }
     else{
         console.log('reset')
+        alert('You lost! and Reload')
         window.location.reload();
         //setState({...state, guess: '', attempt: state.attempt + 1})
         }
