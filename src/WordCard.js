@@ -59,15 +59,13 @@ const activationHandler = (c) => {
     }
 }
 
-   
-//const className = `card` 
     return (
         <div>
         { 
             Array.from(state.chars).map((c, i) => <CharacterCard value={c} key={i} activationHandler={activationHandler}
             attempt={state.attempt}/>) 
         }
-        <div>Word = {state.guess}</div>
+        <div className="wordcard">{state.guess}</div>
         </div>
     );
 }
