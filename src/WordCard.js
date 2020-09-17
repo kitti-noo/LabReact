@@ -53,8 +53,8 @@ const activationHandler = (c) => {
     else{
         console.log('reset')
         alert('You lost! and Reload')
-        window.location.reload();
-        //setState({...state, guess: '', attempt: state.attempt + 1})
+        //window.location.reload();
+        setState({...state, guess: '', attempt: state.attempt + 1})
         }
     }
 }
@@ -65,7 +65,7 @@ const activationHandler = (c) => {
             Array.from(state.chars).map((c, i) => <CharacterCard value={c} key={i} activationHandler={activationHandler}
             attempt={state.attempt}/>) 
         }
-        <div className="wordcard">{state.guess}</div>
+        <div class="wordcenter"><div class="wordcard">{state.guess}</div></div>
         </div>
     );
 }

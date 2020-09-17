@@ -58,4 +58,12 @@
   margin: 1em;
   user-select: none;
  }
- .button2 {background-color: #008CBA;}
+ .center {
+  text-align: center; 
+}
+ .wordcenter {
+  margin: 0;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 20%);
+ }
