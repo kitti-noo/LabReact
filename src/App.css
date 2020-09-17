@@ -3,7 +3,7 @@
 }
 
 .App-logo {
-  height: 40vmin;
+  height: 30vmin;
   pointer-events: none;
 }
 
@@ -40,9 +40,11 @@
   display: inline-block;
   text-align: center;
   width: 3em;
+  font-family: Impact, "Charcoal", sans-serif;
   font-size: 2em;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   margin: 1em;
+  background: white;
   user-select: none;
  }
 
@@ -54,9 +56,12 @@
   text-align: center;
   width:6em;
   font-size: 2em;
+  font-family: Impact, "Charcoal", sans-serif;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   margin: 1em;
   user-select: none;
+  color: red;
+  background: pink;
  }
  .center {
   text-align: center; 
@@ -66,4 +71,23 @@
   position: absolute;
   left: 50%;
   transform: translate(-50%, 20%);
+
  }
+ .background {
+  background-color: #0095FF;
+}
+.monospace {
+  font-size: 1.2em;
+  font-family: "Lucida Console", Courier, monospace;
+}
+.titlecard {
+  display: inline-block;
+  font-family: "Arial Black", "Gadget", sans-serif;
+  text-align: center;
+  width: 8em;
+  font-size: 2.2em;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  margin: 1em;
+  background: #DBFFFD;
+  user-select: none;
+}

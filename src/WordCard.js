@@ -52,7 +52,7 @@ const activationHandler = (c) => {
     }
     else{
         console.log('reset')
-        alert('You lost! and Reload')
+        alert('You lost! and Replay')
         //window.location.reload();
         setState({...state, guess: '', attempt: state.attempt + 1})
         }
